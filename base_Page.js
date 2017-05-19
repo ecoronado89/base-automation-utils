@@ -1,10 +1,10 @@
 
 class base_Page {
-  function moveToElement(elementLocator) {
+  moveToElement(elementLocator) {
         browser.moveToObject(elementLocator,5,5);
   }
 
-  function takeScreenshot(testName, capabilities){
+  takeScreenshot(testName, capabilities){
         browser.saveScreenshot( "./screenshots/"+testName+"-"+capabilities+".png");
   }
 }
